@@ -2,13 +2,16 @@ DATE = [
     "7/4/2004",
     
     ];
+
 TITLE = [
     "Evan's birthday",
 
     ];
+
 TAG = [
     "birthday",
-];
+    ];
+
 MONTHS = [
     "January",
     "February",
@@ -22,7 +25,8 @@ MONTHS = [
     "October",
     "November",
     "December"
-];
+    ];
+
 const currentDate = new Date();
 console.log(currentDate);
 let currentDay = currentDate.getDate();
@@ -56,6 +60,8 @@ function figbuilder(index){
     fig.setAttribute("data-tag", TAG[index]);
     fig.setAttribute("data-day", day);
     fig.setAttribute("data-month", month);
+    fig.setAttribute("data-diffrence", diffTime);
+
 
     title = document.createElement('figcaption');
     title.innerHTML = day + " of " + MONTHS[parseInt(month) - 1];

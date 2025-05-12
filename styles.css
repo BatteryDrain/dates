@@ -27,6 +27,9 @@ figure {
     filter: drop-shadow(18px 18px 8px rgb(101, 101, 101));
     transition: transform 0.3s ease, filter 0.3s ease;
 }
-@media all and (max-width: 810px) {
-
+@media screen and (min-width: 500px) {
+    figure:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(16px 16px 30px rgb(101, 101, 101));
+    }
 }
