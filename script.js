@@ -1,15 +1,24 @@
 DATE = [
+    "14/1/2005",
+    "17/3/2003",
     "7/4/2004",
+    "11/5"
     
     ];
 
 TITLE = [
+    "Martin's birthday",
+    "Vanja's birthday",
     "Evan's birthday",
+    "mothers day"
 
     ];
 
 TAG = [
     "birthday",
+    "birthday",
+    "birthday",
+    "event"
     ];
 
 MONTHS = [
@@ -61,6 +70,7 @@ function figbuilder(index){
     fig.setAttribute("data-day", day);
     fig.setAttribute("data-month", month);
     fig.setAttribute("data-diffrence", diffTime);
+    fig.classList.add(TAG[index]);
 
 
     title = document.createElement('figcaption');
