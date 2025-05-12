@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Mulish", Arial, sans-serif;
+}
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+figure {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: white;
+    background-color: rgb(0, 47, 255);
+    border-radius: 25px;
+    min-height: 300px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    max-width: 700px;
+    filter: drop-shadow(18px 18px 8px rgb(101, 101, 101));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+@media all and (max-width: 810px) {
+
+}
