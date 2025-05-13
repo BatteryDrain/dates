@@ -1,24 +1,11 @@
 DATE = [
-    "14/1/2005",
-    "17/3/2003",
-    "7/4/2004",
-    "11/5"
-    
-    ];
-
-TITLE = [
-    "Martin's birthday",
-    "Vanja's birthday",
-    "Evan's birthday",
-    "mothers day"
-
-    ];
-
-TAG = [
-    "birthday",
-    "birthday",
-    "birthday",
-    "event"
+    ["14/1/2005","Martin's birthday","birthday"],
+    ["17/3/2003","Vanja's birthday","birthday"],
+    ["7/4/2004","Evan's birthday","birthday"],
+    ["11/5","mother's day","event"],
+    ["15/6","father's day","event"],
+    ["14/7.2007","Thomas' birthday","birthday"],
+    ["25/11","christmas", "event"]
     ];
 
 MONTHS = [
@@ -58,7 +45,7 @@ function buildcontent() {
 }
 
 function figbuilder(index){
-    let [day, month, year] = DATE[index].split("/").map(Number);
+    let [day, month, year] = DATE[index][0].split("/").map(Number);
     then = new Date (currentYear,month - 1,day);
     then.setHours(0, 0, 0, 0);
     diffTime = then - currentDate;
@@ -66,11 +53,11 @@ function figbuilder(index){
     daysuntil.push(diffTime);
 
     fig = document.createElement('figure');
-    fig.setAttribute("data-tag", TAG[index]);
+    fig.setAttribute("data-tag", DATE[index][2]);
     fig.setAttribute("data-day", day);
     fig.setAttribute("data-month", month);
     fig.setAttribute("data-diffrence", diffTime);
-    fig.classList.add(TAG[index]);
+    fig.classList.add(DATE[index][2]);
 
 
     title = document.createElement('figcaption');
@@ -78,7 +65,7 @@ function figbuilder(index){
     fig.appendChild(title);
 
     description = document.createElement('p');
-    description.innerHTML = "There are " + diffTime + " days until " + TITLE[index];
+    description.innerHTML = "There are " + diffTime + " days until " + DATE[index][1];
     fig.appendChild(description);
 
     content.appendChild(fig);
