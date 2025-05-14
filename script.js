@@ -1,10 +1,11 @@
 DATE = [
+    ["1/1","New Year's","event"],
     ["14/1/2005","Martin's birthday","birthday"],
     ["17/3/2003","Vanja's birthday","birthday"],
     ["7/4/2004","Evan's birthday","birthday"],
     ["11/5","mother's day","event"],
     ["15/6","father's day","event"],
-    ["14/7.2007","Thomas' birthday","birthday"],
+    ["14/7/2007","Thomas' birthday","birthday"],
     ["25/11","christmas", "event"]
     ];
 
