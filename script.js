@@ -7,7 +7,7 @@ DATE = [
     ["15/6","father's day","event"],
     ["28/6", "Paul W's birthday","birthday"],
     ["14/7/2007","Thomas W's birthday","birthday"],
-    ["2/11/2003","Paul's birthday","birthday"],
+    ["2/11/2003","Paul C's birthday","birthday"],
     ["20/12", "Emma's birthday", "birthday"],
     ["25/12","christmas", "event"]
     ];
