@@ -9,7 +9,8 @@ DATE = [
     ["14/7/2007","Thomas W's birthday","birthday"],
     ["2/11/2003","Paul C's birthday","birthday"],
     ["20/12", "Emma's birthday", "birthday"],
-    ["25/12","christmas", "event"]
+    ["25/12","christmas", "event"],
+    ["1/9/2005","Adi's birthday", "birthday"]
     ];
 
 MONTHS = [
