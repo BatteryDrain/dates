@@ -38,6 +38,10 @@ figure {
     background-color: red;
 }
 
+.anniversary {
+    background-color: lime;
+}
+
 @media screen and (min-width: 500px) {
     figure:hover {
         transform: scale(1.1);
